@@ -1,0 +1,67 @@
+.poke-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background: #ef5350; /* Default fallback color */
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left:4px;
+}
+
+.logo-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 4px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  margin-right:8px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffeb3b; /* Highlight on hover */
+}
+
+.active-link {
+  color: #ffeb3b; /* Highlight active link */
+  border-bottom: 2px solid #ffeb3b; /* Underline active link */
+}
+
+@media (max-width: 768px) {
+  .poke-header {
+    flex-direction: column;
+    height: auto;
+    padding: 8px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+}
