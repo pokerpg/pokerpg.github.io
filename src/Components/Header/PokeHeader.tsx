@@ -30,7 +30,7 @@ export const PokeHeader = () => {
             <div className="logo">
                 <img
                     //TODO: This is artwork from the pokemon global link. We may need to change this
-                    src="../../../public/garbodor.svg"
+                    src="/garbodor.svg"
                     alt="Header"
                     className="logo-image"
                 />
