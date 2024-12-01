@@ -1,5 +1,13 @@
-.fullscreen-table {
-  height:calc(100vw - 24px);
+.fullscreen-buttons{
   width:100vw;
   padding-top:56px;
+  margin-top:10px;
+  display:flex;
+  justify-content: space-around;
+}
+
+.fullscreen-table {
+  height:90vw;
+  width:100vw;
+  padding-top:10px;
 }

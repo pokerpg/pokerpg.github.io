@@ -8,15 +8,17 @@ export const PokeHeader = () => {
     const getHeaderColor = () => {
         switch (location.pathname) {
             case "/":
-                return "#ef5350"; // Red for Home
+                return "#ef5350";
             case "/pokedex":
-                return "#42a5f5"; // Blue for Pokedex
+                return "#42a5f5";
             case "/resources":
-                return "#66bb6a"; // Green for About
+                return "#66bb6a";
+            case "/create":
+                return "#9662e4";
             case "/contact":
-                return "#ffa726"; // Orange for Contact
+                return "#ffa726";
             default:
-                return "#ef5350"; // Default red
+                return "#ef5350";
         }
     };
 
@@ -32,32 +34,38 @@ export const PokeHeader = () => {
                     alt="Header"
                     className="logo-image"
                 />
-                PokéRPG
+                PokéRPG v0.1
             </div>
             <nav className="nav-links">
                 <NavLink
                     to="/"
                     className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
                 >
-                    Home
+                    <img src="/src/Assets/Poke_Ball_Sprite.webp" alt="Poke Ball"/> Home
                 </NavLink>
                 <NavLink
                     to="/pokedex"
                     className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
                 >
-                   Pokedex
+                    <img src="/src/Assets/Great_Ball_Sprite.webp" alt="Great Ball"/> Pokedex
                 </NavLink>
                 <NavLink
                     to="/resources"
                     className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
                 >
-                    Resources
+                    <img src="/src/Assets/Safari_Ball_Sprite.webp" alt="Safari Ball"/> Resources
+                </NavLink>
+                <NavLink
+                    to="/create"
+                    className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
+                >
+                    <img src="/src/Assets/Master_Ball_Sprite.webp" alt="Master Ball"/>Character Create
                 </NavLink>
                 <NavLink
                     to="/contact"
-                    className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
+                    className={({isActive}) => (isActive ? "active-link" : "nav-link")}
                 >
-                    Contact
+                    <img src="/src/Assets/Park_Ball_Sprite.webp" alt="Park Ball"/> Contact
                 </NavLink>
             </nav>
         </header>
