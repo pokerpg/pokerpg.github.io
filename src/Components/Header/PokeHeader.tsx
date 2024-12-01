@@ -30,7 +30,7 @@ export const PokeHeader = () => {
             <div className="logo">
                 <img
                     //TODO: This is artwork from the pokemon global link. We may need to change this
-                    src="src/Assets/garbodor.svg"
+                    src="../../../public/garbodor.svg"
                     alt="Header"
                     className="logo-image"
                 />
@@ -41,31 +41,31 @@ export const PokeHeader = () => {
                     to="/"
                     className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
                 >
-                    <img src="/src/Assets/Poke_Ball_Sprite.webp" alt="Poke Ball"/> Home
+                    <img src="/Poke_Ball_Sprite.webp" alt="Poke Ball"/> Home
                 </NavLink>
                 <NavLink
                     to="/pokedex"
                     className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
                 >
-                    <img src="/src/Assets/Great_Ball_Sprite.webp" alt="Great Ball"/> Pokedex
+                    <img src="/Great_Ball_Sprite.webp" alt="Great Ball"/> Pokedex
                 </NavLink>
                 <NavLink
                     to="/resources"
                     className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
                 >
-                    <img src="/src/Assets/Safari_Ball_Sprite.webp" alt="Safari Ball"/> Resources
+                    <img src="/Safari_Ball_Sprite.webp" alt="Safari Ball"/> Resources
                 </NavLink>
                 <NavLink
                     to="/create"
                     className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
                 >
-                    <img src="/src/Assets/Master_Ball_Sprite.webp" alt="Master Ball"/>Character Create
+                    <img src="/Master_Ball_Sprite.webp" alt="Master Ball"/>Character Create
                 </NavLink>
                 <NavLink
                     to="/contact"
                     className={({isActive}) => (isActive ? "active-link" : "nav-link")}
                 >
-                    <img src="/src/Assets/Park_Ball_Sprite.webp" alt="Park Ball"/> Contact
+                    <img src="/Park_Ball_Sprite.webp" alt="Park Ball"/> Contact
                 </NavLink>
             </nav>
         </header>
