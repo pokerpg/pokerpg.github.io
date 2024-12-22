@@ -3,8 +3,9 @@ import "./PokedexTable.scss"
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
 import {columnRenderingDefinition} from "./pokedexTableFormatter"
-import {pokedexEntries, PokedexEntry} from "../../../PokedexData/PokedexData/pokedexEntries"
+import {pokedexEntries} from "../../../PokedexData/PokedexData/pokedexEntries"
 import {useState} from "react";
+import {PokedexEntry} from "../../../Types/types";
 
 
 
