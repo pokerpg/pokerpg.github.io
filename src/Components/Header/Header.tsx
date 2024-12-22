@@ -1,11 +1,19 @@
 import { NavLink, useLocation } from "react-router-dom";
-import "./PokeHeader.scss";
+import "./Header.scss";
 
-export const PokeHeader = () => {
+export const Header = () => {
     const location = useLocation();
 
-    // Dynamically determine header background color based on route
+    // Dynamically determine header background color based on routing
     const getHeaderColor = () => {
+
+        //Custom Route color checking
+        if (/^\/pokedex\/[^/]+$/.test(location.pathname)) {
+            //TODO: Make this return a custom color based on the pokemon type.
+            return "#d322c0"; // Color for /pokedex/:additionalContent
+        }
+
+        //Base App Routes
         switch (location.pathname) {
             case "/":
                 return "#ef5350";
@@ -25,7 +33,7 @@ export const PokeHeader = () => {
     return (
         <header
             className="poke-header"
-            style={{ backgroundColor: getHeaderColor() }}
+            style={{ backgroundColor: getHeaderColor()+"88", backdropFilter:"blur(8px)" }}
         >
             <div className="logo">
                 <img

@@ -2,8 +2,8 @@ import { AgGridReact } from "ag-grid-react";
 import "./PokedexTable.scss"
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
-import {pokedexColumns} from "../../../PageData/PokedexData/pokedexTableColumns"
-import {pokedexTableRows, RowDatabase} from "../../../PageData/PokedexData/pokedexTableRows"
+import {columnRenderingDefinition} from "./pokedexTableFormatter"
+import {pokedexEntries, PokedexEntry} from "../../../PokedexData/PokedexData/pokedexEntries"
 import {useState} from "react";
 
 
@@ -28,8 +28,8 @@ export const PokedexTable = () => {
         </div>
         <div className={"ag-theme-alpine fullscreen-table"}>
                 <AgGridReact
-                    rowData={pokedexTableRows.find((row: RowDatabase) => (row.generation === generation)).evolutionLines}
-                    columnDefs={pokedexColumns}
+                    rowData={pokedexEntries.find((row: PokedexEntry) => (row.generation === generation)).evolutionLines}
+                    columnDefs={columnRenderingDefinition}
                     suppressDragLeaveHidesColumns={true}
                     defaultColDef={{
                         sortable: true,
