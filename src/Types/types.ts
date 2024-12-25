@@ -2,11 +2,13 @@ export type Pokemon = {
     pokeNumber:number;
     pokeName: string;
     pokemonTypes: PokemonType[];
-    knownMoves:any[]; // TODO Update any to be a real typescript type
+    knownMoves:KnownMoves[]; // TODO Update any to be a real typescript type
     evolutionLevel?:number;
     iconUrl: string;
     source: string;
 };
+
+export type KnownMoves={level:number;name:string};
 
 export type PokemonType = "normal" | "fire" | "water" | "electric" |
     "grass" | "ice" | "fighting" | "poison" | "ground" |

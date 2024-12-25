@@ -6,7 +6,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             pokeNumber: 1,
             pokeName: "Bulbasaur",
             pokemonTypes: ["grass","poison"],
-            knownMoves:["Tackle"],
+            knownMoves:[{level:1,name:"Tackle"}],
             evolutionLevel:16,
             source: "https://pokemondb.net/pokedex/bulbasaur",
             iconUrl: "https://img.pokemondb.net/sprites/scarlet-violet/normal/bulbasaur.png",
@@ -15,7 +15,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             pokeNumber: 2,
             pokeName: "Ivysaur",
             pokemonTypes: ["grass","poison"],
-            knownMoves:["Tackle"],
+            knownMoves:[{level:1,name:"Tackle"}],
             evolutionLevel:32,
             source: "https://pokemondb.net/pokedex/ivysaur",
             iconUrl: "https://img.pokemondb.net/sprites/scarlet-violet/normal/ivysaur.png"
@@ -24,7 +24,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             pokeNumber: 3,
             pokeName: "Venusaur",
             pokemonTypes: ["grass","poison"],
-            knownMoves:["Tackle"],
+            knownMoves:[{level:1,name:"Tackle"}],
             source: "https://pokemondb.net/pokedex/venusaur",
             iconUrl: "https://img.pokemondb.net/sprites/scarlet-violet/normal/venusaur.png"
         },
@@ -32,7 +32,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             {
                 pokeNumber: 4,
                 pokeName: "Charmander",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["fire"],
                 knownMoves:[],
                 evolutionLevel:16,
                 source: "https://pokemondb.net/pokedex/charmander",
@@ -41,7 +41,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             {
                 pokeNumber: 5,
                 pokeName: "Charmeleon",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["fire"],
                 knownMoves:[],
                 evolutionLevel:32,
                 source: "https://pokemondb.net/pokedex/charmeleon",
@@ -50,7 +50,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             {
                 pokeNumber: 6,
                 pokeName: "Charizard",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["fire","flying"],
                 knownMoves:[],
                 source: "https://pokemondb.net/pokedex/charizard",
                 iconUrl: "https://img.pokemondb.net/sprites/scarlet-violet/normal/charizard.png"
@@ -59,7 +59,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             {
                 pokeNumber: 7,
                 pokeName: "Squirtle",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["water"],
                 knownMoves:[],
                 evolutionLevel:16,
                 source: "https://pokemondb.net/pokedex/squirtle",
@@ -68,7 +68,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             {
                 pokeNumber: 8,
                 pokeName: "Wartortle",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["water"],
                 knownMoves:[],
                 evolutionLevel:32,
                 source: "https://pokemondb.net/pokedex/wartortle",
@@ -77,7 +77,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             {
                 pokeNumber: 9,
                 pokeName: "Blastoise",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["water"],
                 knownMoves:[],
                 source: "https://pokemondb.net/pokedex/blastoise",
                 iconUrl: "https://img.pokemondb.net/sprites/scarlet-violet/normal/blastoise.png"
@@ -85,120 +85,120 @@ export const pokedexEntries: Array<PokedexEntry> = [
             [{
                 pokeNumber: 10,
                 pokeName: "Caterpie",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["bug"],
                 knownMoves:[],
                 evolutionLevel:7,
                 source: "https://pokemondb.net/pokedex/caterpie",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/caterpie.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/caterpie.png"
             },
             {
                 pokeNumber: 11,
                 pokeName: "Metapod",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["bug"],
                 knownMoves:[],
                 evolutionLevel:10,
                 source: "https://pokemondb.net/pokedex/metapod",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/metapod.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/metapod.png"
             },
             {
                 pokeNumber: 12,
                 pokeName: "Butterfree",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["bug","flying"],
                 knownMoves:[],
                 source: "https://pokemondb.net/pokedex/butterfree",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/butterfree.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/butterfree.png"
             },
                 ],
             [{
                 pokeNumber: 13,
                 pokeName: "Weedle",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["bug","poison"],
                 knownMoves:[],
                 evolutionLevel:7,
                 source: "https://pokemondb.net/pokedex/weedle",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/weedle.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/weedle.png"
             },
             {
                 pokeNumber: 14,
                 pokeName: "Kakuna",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["bug","poison"],
                 knownMoves:[],
                 evolutionLevel:10,
                 source: "https://pokemondb.net/pokedex/kakuna",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/kakuna.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/kakuna.png"
             },
             {
                 pokeNumber: 15,
                 pokeName: "Beedrill",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["bug","poison"],
                 knownMoves:[],
                 source: "https://pokemondb.net/pokedex/beedrill",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/beedrill.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/beedrill.png"
             }],
             [{
                 pokeNumber: 16,
                 pokeName: "Pidgey",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["normal","flying"],
                 knownMoves:[],
                 evolutionLevel:18,
                 source: "https://pokemondb.net/pokedex/pidgey",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/pidgey.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/pidgey.png"
             },
             {
                 pokeNumber: 17,
                 pokeName: "Pidgeotto",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["normal","flying"],
                 knownMoves:[],
                 evolutionLevel:36,
                 source: "https://pokemondb.net/pokedex/pidgeotto",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/pidgeotto.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/pidgeotto.png"
             },
             {
                 pokeNumber: 18,
                 pokeName: "Pidgeot",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["normal","flying"],
                 knownMoves:[],
                 source: "https://pokemondb.net/pokedex/pidgeot",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/pidgeot.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/pidgeot.png"
             }],
             [{
                 pokeNumber: 19,
                 pokeName: "Rattata",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["normal"],
                 knownMoves:[],
                 evolutionLevel:20,
                 source: "https://pokemondb.net/pokedex/rattata",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/rattata.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/rattata.png"
             },
             {
                 pokeNumber: 20,
                 pokeName: "Raticate",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["normal"],
                 knownMoves:[],
                 source: "https://pokemondb.net/pokedex/raticate",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/raticate.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/raticate.png"
             }],
             [{
                 pokeNumber: 21,
                 pokeName: "Spearow",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["normal","flying"],
                 knownMoves:[],
                 evolutionLevel:20,
                 source: "https://pokemondb.net/pokedex/spearow",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/spearow.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/spearow.png"
             },
             {
                 pokeNumber: 22,
                 pokeName: "Fearow",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["normal","flying"],
                 knownMoves:[],
                 source: "https://pokemondb.net/pokedex/fearow",
-                iconUrl: "https://img.pokemondb.net/sprites/red-blue/normal/fearow.png"
+                iconUrl: "https://img.pokemondb.net/sprites/x-y/normal/fearow.png"
             }],
             [{
                 pokeNumber: 23,
                 pokeName: "Ekans",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["poison"],
                 knownMoves:[],
                 evolutionLevel:22,
                 source: "https://pokemondb.net/pokedex/ekans",
@@ -207,7 +207,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             {
                 pokeNumber: 24,
                 pokeName: "Arbok",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["poison"],
                 knownMoves:[],
                 source: "https://pokemondb.net/pokedex/arbok",
                 iconUrl: "https://img.pokemondb.net/sprites/scarlet-violet/normal/arbok.png"
@@ -215,7 +215,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             [{
                 pokeNumber: 25,
                 pokeName: "Pikachu",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["electric"],
                 knownMoves:[],
                 evolutionLevel:25, //TODO: Ask Nathan about how evolution works. Always level?
                 source: "https://pokemondb.net/pokedex/pikachu",
@@ -224,7 +224,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             {
                 pokeNumber: 26,
                 pokeName: "Raichu",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["electric"],
                 knownMoves:[],
                 source: "https://pokemondb.net/pokedex/raichu",
                 iconUrl: "https://img.pokemondb.net/sprites/scarlet-violet/normal/raichu.png"
@@ -232,7 +232,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             [{
                 pokeNumber: 27,
                 pokeName: "Sandshrew",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["ground"],
                 knownMoves:[],
                 evolutionLevel:22,
                 source: "https://pokemondb.net/pokedex/sandshrew",
@@ -241,7 +241,7 @@ export const pokedexEntries: Array<PokedexEntry> = [
             {
                 pokeNumber: 28,
                 pokeName: "Sandslash",
-                pokemonTypes: ["grass"],
+                pokemonTypes: ["ground"],
                 knownMoves:[],
                 source: "https://pokemondb.net/pokedex/sandslash",
                 iconUrl: "https://img.pokemondb.net/sprites/scarlet-violet/normal/sandslash.png"

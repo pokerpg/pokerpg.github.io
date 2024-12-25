@@ -1,6 +1,6 @@
 import {NavLink, useParams} from "react-router-dom";
 import {pokedexEntries} from "../../../PokedexData/PokedexData/pokedexEntries";
-import {PokedexEntry, Pokemon} from "../../../Types/types";
+import {KnownMoves, PokedexEntry, Pokemon} from "../../../Types/types";
 import './EvolutionLineEntry.scss'
 import {MoveTypeBlock} from "../../../Components/MoveTypeBlock/MoveTypeBlock";
 import {PokemonImage} from "../../../Components/PokemonImage/PokemonImage";
@@ -33,20 +33,21 @@ export const EvolutionLineEntry = () =>{
         <NavLink to="/pokedex">Back to Pokedex</NavLink>
                 <h2>Trainer Name: </h2>
                 <h2>{evolutionLine}</h2>
-                <ul>
+
                     {evolution.map((pokemon:Pokemon)=>{
-                        return <li>{JSON.stringify(pokemon)}
+                        return <span>
 
+                            {/*{JSON.stringify(pokemon)}*/}
                             <PokemonImage pokemon={pokemon}/>
-
                             {pokemon.pokemonTypes.map((type)=>{
                                 return <MoveTypeBlock moveType={type}/>
                             })}
 
-
-
-                        </li>
+                            {pokemon.knownMoves.map((move:KnownMoves)=>{
+                                return (<span>{move.level}:{move.name}</span>)
+                            })}
+                        </span>
                     })}
-                </ul>
+
     </section>
 }

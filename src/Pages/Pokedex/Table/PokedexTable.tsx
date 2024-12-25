@@ -27,7 +27,7 @@ export const PokedexTable = () => {
             <button onClick={() => setGeneration(9)}>Gen 9</button>
             <button onClick={() => setGeneration(10)}>Gen 10</button>
         </div>
-        <div className={"ag-theme-alpine fullscreen-table"}>
+        <div className={"ag-theme-alpine-dark fullscreen-table"}>
                 <AgGridReact
                     rowData={pokedexEntries.find((row: PokedexEntry) => (row.generation === generation)).evolutionLines}
                     columnDefs={columnRenderingDefinition}

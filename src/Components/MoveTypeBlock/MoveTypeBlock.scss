@@ -1,7 +1,98 @@
+@import "src/pokemonStyles";
+
 .move-type-block {
-  border-radius: 4px;
-  padding:5px;
-  margin:2px;
-  display: flex;
-  border:1px solid #000000;
+  @include border-radius;
+  padding: 5px;
+  margin: 3px;
+  border: 1px solid $grey;
+  color: $white;
+}
+
+.move-type-block.normal {
+  background-color: map-get($pokemon-colors, normal);
+  @include pokemon-shadow(normal);
+}
+
+.move-type-block.fire {
+  background-color: map-get($pokemon-colors, fire);
+  @include pokemon-shadow(fire);
+}
+
+.move-type-block.water {
+  background-color: map-get($pokemon-colors, water);
+  @include pokemon-shadow(water);
+}
+
+.move-type-block.electric {
+  background-color: map-get($pokemon-colors, electric);
+  @include pokemon-shadow(electric);
+}
+
+.move-type-block.grass {
+  background-color: map-get($pokemon-colors, grass);
+  @include pokemon-shadow(grass);
+}
+
+.move-type-block.ice {
+  background-color: map-get($pokemon-colors, ice);
+  @include pokemon-shadow(ice);
+}
+
+.move-type-block.fighting {
+  background-color: map-get($pokemon-colors, fighting);
+  @include pokemon-shadow(fighting);
+}
+
+.move-type-block.poison {
+  background-color: map-get($pokemon-colors, poison);
+  @include pokemon-shadow(poison);
+}
+
+.move-type-block.ground {
+  background-color: map-get($pokemon-colors, ground);
+  @include pokemon-shadow(ground);
+}
+
+.move-type-block.flying {
+  background-color: map-get($pokemon-colors, flying);
+  @include pokemon-shadow(flying);
+}
+
+.move-type-block.psychic {
+  background-color: map-get($pokemon-colors, psychic);
+  @include pokemon-shadow(psychic);
+}
+
+.move-type-block.bug {
+  background-color: map-get($pokemon-colors, bug);
+  @include pokemon-shadow(bug);
+}
+
+.move-type-block.rock {
+  background-color: map-get($pokemon-colors, rock);
+  @include pokemon-shadow(rock);
+}
+
+.move-type-block.ghost {
+  background-color: map-get($pokemon-colors, ghost);
+  @include pokemon-shadow(ghost);
+}
+
+.move-type-block.dragon {
+  background-color: map-get($pokemon-colors, dragon);
+  @include pokemon-shadow(dragon);
+}
+
+.move-type-block.dark {
+  background-color: map-get($pokemon-colors, dark);
+  @include pokemon-shadow(dark);
+}
+
+.move-type-block.steel {
+  background-color: map-get($pokemon-colors, steel);
+  @include pokemon-shadow(steel);
+}
+
+.move-type-block.fairy {
+  @include pokemon-shadow(steel);
 }

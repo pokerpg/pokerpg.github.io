@@ -6,8 +6,9 @@ type MoveTypeBlockProps ={
 }
 export const MoveTypeBlock = ({moveType}:MoveTypeBlockProps) =>{
 
-    return <span className={'move-type-block'}>{
-        moveType.toUpperCase()}
+    return <span className={'move-type-block' + ' ' + moveType}>{
+        moveType.toUpperCase()
+    }
     </span>
 
 
